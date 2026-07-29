@@ -1,0 +1,6 @@
+Model,R2,RMSE,MAE
+Gradient Boosting,0.8793,4329.57,2443.48
+Random Forest,0.8649,4579.22,2555.75
+Linear Regression,0.7836,5796.28,4181.19
+Lasso Regression,0.7835,5797.04,4182.22
+Ridge Regression,0.7833,5800.46,4193.2

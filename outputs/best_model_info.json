@@ -1,0 +1,21 @@
+{
+  "best_model": "Gradient Boosting",
+  "metrics": {
+    "Model": "Gradient Boosting",
+    "R2": 0.8793,
+    "RMSE": 4329.57,
+    "MAE": 2443.48
+  },
+  "features": {
+    "numeric": [
+      "age",
+      "bmi",
+      "children"
+    ],
+    "categorical": [
+      "sex",
+      "smoker",
+      "region"
+    ]
+  }
+}
