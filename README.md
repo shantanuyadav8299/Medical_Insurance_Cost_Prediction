@@ -13,7 +13,7 @@ and lifestyle attributes using regression models.
 insurance_project/
 ├── data/insurance.csv          # Dataset
 ├── train_model.py              # Full training pipeline (EDA + 5 models + save best)
-├── app.py                      # Streamlit web app for live predictions
+├── app.py                      # Streamlit web app: Predict tab + Dashboard tab
 ├── outputs/
 │   ├── best_model.joblib       # Saved trained pipeline (preprocessing + model)
 │   ├── best_model_info.json    # Metadata: best model name + metrics
@@ -38,11 +38,21 @@ generates all EDA/evaluation plots.
 
 ### 2. Launch the interactive app
 ```bash
-pip install streamlit
+pip install streamlit plotly
 streamlit run app.py
 ```
-Opens a browser form where you enter age, sex, BMI, children, smoker status,
-and region, and get an instant predicted insurance cost.
+Opens a two-tab app:
+- **🔮 Predict** — enter age, sex, BMI, children, smoker status, and region to
+  get an instant predicted insurance cost.
+- **📊 Dashboard** — interactive analytics view with:
+  - KPI cards (record count, average/median charges, % smokers)
+  - Filters for region, smoker status, and age range
+  - Model comparison charts (R² and RMSE across all 5 models)
+  - Charges distribution and boxplot by smoking status
+  - Age vs. charges scatter plot (colored by BMI)
+  - Average charges by region
+  - Feature importance chart
+  - Raw filtered data table
 
 ## Results
 
